@@ -61,14 +61,12 @@ export function MissionStatsSection() {
 
   return (
     <section className="relative w-full bg-[#f4f2ee] overflow-hidden">
-      
-
       <div className="relative flex items-center justify-center px-5 md:px-10">
-        <div className="max-w-[1200px] w-full p-10 md:p-16 lg:p-20 flex flex-col gap-10 md:gap-16 lg:gap-20">
+        <div className="max-w-[1200px] w-full py-12 md:py-16 lg:py-20 flex flex-col gap-10 md:gap-16 lg:gap-20">
           {/* Mission and Stats Grid */}
           <div className="bg-[#f0ece6] rounded-3xl p-2 h-auto lg:h-[560px] flex flex-col lg:flex-row gap-2">
             {/* Mission Card */}
-            <div className="relative bg-black/0 rounded-[20px] p-6 md:p-10 flex flex-col justify-between gap-10 lg:w-[420px] overflow-hidden shadow-[0px_8px_20px_0px_rgba(0,0,0,0.25),0px_2px_4px_0px_rgba(0,0,0,0.25)]">
+            <div className="relative bg-black/0 rounded-[20px] p-5 sm:p-6 md:p-10 flex flex-col justify-between gap-8 md:gap-10 lg:w-[420px] overflow-hidden shadow-[0px_8px_20px_0px_rgba(0,0,0,0.25),0px_2px_4px_0px_rgba(0,0,0,0.25)]">
               {/* Background Image */}
               <div className="absolute inset-0 rounded-[20px]">
                 <Image
@@ -132,11 +130,11 @@ export function MissionStatsSection() {
                       />
                     </svg>
                   </div>
-                  <h2 className="font-[family-name:var(--font-albert-sans)] text-[32px] md:text-[40px] leading-[44px] tracking-[-2px] text-white">
+                  <h2 className="font-[family-name:var(--font-albert-sans)] text-[28px] sm:text-[32px] md:text-[40px] leading-[1.15] md:leading-[44px] tracking-[-1.6px] sm:tracking-[-2px] text-white">
                     {mission.heading}
                   </h2>
                 </div>
-                <p className="font-[family-name:var(--font-geist)] text-lg leading-[25.2px] tracking-[-0.54px]">
+                <p className="font-[family-name:var(--font-geist)] text-base sm:text-lg leading-[22.4px] sm:leading-[25.2px] tracking-[-0.48px] sm:tracking-[-0.54px]">
                   <span className="text-white/80 whitespace-pre-line">
                     {mission.description}
                   </span>
@@ -144,19 +142,19 @@ export function MissionStatsSection() {
               </div>
 
               {/* Bottom section */}
-              <div className="relative flex items-end justify-between">
-                <div className="flex items-center gap-10 px-5">
+              <div className="relative flex flex-col sm:flex-row sm:items-end gap-6 sm:gap-0 sm:justify-between">
+                <div className="flex items-center gap-6 sm:gap-10">
                   <PlusIcon />
                   <PlusIcon />
                   <PlusIcon />
                 </div>
-                <div className="relative w-[120px] h-[120px] rounded-xl overflow-hidden shrink-0">
+                <div className="relative w-24 h-24 sm:w-[120px] sm:h-[120px] rounded-xl overflow-hidden shrink-0 self-end">
                   <Image
                     src="/images/mission-thumbnail.png"
                     alt=""
                     fill
                     className="object-cover"
-                    sizes="120px"
+                    sizes="(max-width: 640px) 96px, 120px"
                   />
                 </div>
               </div>
@@ -173,7 +171,7 @@ export function MissionStatsSection() {
 
           {/* Logo Section */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 overflow-hidden">
-            <p className="font-[family-name:var(--font-geist)] text-lg leading-[25.2px] tracking-[-0.54px] text-[#605f5f] whitespace-nowrap">
+            <p className="font-[family-name:var(--font-geist)] text-lg leading-[25.2px] tracking-[-0.54px] text-[#605f5f] text-center whitespace-normal sm:whitespace-nowrap">
               Trusted by 50+ partners
             </p>
             <div className="relative h-8 w-full md:w-[814px] overflow-hidden">

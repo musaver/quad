@@ -54,10 +54,10 @@ export function AboutHeroSection() {
           </div>
 
           {/* Bento grid: video left + team photos right */}
-          <div className="w-full flex flex-col md:flex-row gap-2">
+          <div className="w-full flex flex-col md:flex-row gap-3 md:gap-2">
 
             {/* Left: Video / main image card */}
-            <div className="flex-[1.1] bg-[#f0ece6] rounded-3xl p-2 md:p-3 flex items-center justify-center min-h-[280px] md:min-h-[360px] lg:min-h-[440px]">
+            <div className="flex-[1.1] bg-[#f0ece6] rounded-3xl p-2 md:p-3 flex items-center justify-center min-h-[240px] sm:min-h-[280px] md:min-h-[360px] lg:min-h-[440px]">
               <div className="w-full max-w-[380px] aspect-square -rotate-3">
                 <div className="bg-white rounded-3xl shadow-[4px_6px_15px_0px_rgba(0,0,0,0.25)] overflow-hidden w-full h-full">
                   <video

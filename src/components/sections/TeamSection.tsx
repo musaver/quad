@@ -40,7 +40,7 @@ export function TeamSection() {
       </div>
 
       <div className="relative flex items-center justify-center px-5 md:px-10">
-        <div className="max-w-[1200px] w-full p-10 md:p-16 lg:p-20 flex flex-col lg:flex-row gap-10 lg:gap-0 lg:justify-between">
+        <div className="max-w-[1200px] w-full py-12 md:py-16 lg:py-20 flex flex-col lg:flex-row gap-10 lg:gap-0 lg:justify-between">
           {/* Left: Sticky heading */}
           <div className="flex flex-col max-w-[600px] lg:w-[343px] shrink-0 lg:sticky lg:top-24 lg:self-start">
             <div className="flex flex-col gap-5">
@@ -49,7 +49,7 @@ export function TeamSection() {
                   {team.title}
                 </h2>
               </div>
-              <p className="font-[family-name:var(--font-geist)] text-lg leading-[25.2px] tracking-[-0.54px] text-[#605f5f] text-center lg:text-left">
+              <p className="font-[family-name:var(--font-geist)] text-base sm:text-lg leading-[22.4px] sm:leading-[25.2px] tracking-[-0.48px] sm:tracking-[-0.54px] text-[#605f5f] text-center lg:text-left">
                 {team.subtitle}
               </p>
             </div>
@@ -57,7 +57,7 @@ export function TeamSection() {
 
           {/* Right: Team cards grid */}
           <StaggerContainer className="w-full lg:w-[603px] overflow-hidden">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-2">
               {team.members.map((member, index) => (
                 <StaggerItem key={member.name}>
                   <TeamCard {...member} />

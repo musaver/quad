@@ -225,9 +225,130 @@ export function CloseMenuIcon({ className = "size-4" }: IconProps) {
   );
 }
 
+export function BrandWebIcon({ className = "size-5", stroke = "black" }: IconProps) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 20 20">
+      <path
+        d="M2.5 5.625C2.5 4.934 3.059 4.375 3.75 4.375H16.25C16.941 4.375 17.5 4.934 17.5 5.625V14.375C17.5 15.066 16.941 15.625 16.25 15.625H3.75C3.059 15.625 2.5 15.066 2.5 14.375V5.625Z"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.5 7.5H17.5"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M5 6h.01" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+      <path d="M7.5 6h.01" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+      <path d="M10 11.25h5" stroke={stroke} strokeWidth="1.25" strokeLinecap="round" />
+      <path d="M5 11.25h2.5" stroke={stroke} strokeWidth="1.25" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function VideoContentIcon({ className = "size-5", stroke = "black" }: IconProps) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 20 20">
+      <rect
+        x="2.5"
+        y="4.375"
+        width="11.25"
+        height="11.25"
+        rx="2"
+        stroke={stroke}
+        strokeWidth="1.25"
+      />
+      <path
+        d="M13.75 7.5L17.5 5.625V14.375L13.75 12.5V7.5Z"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M6.875 8.125L10 10L6.875 11.875V8.125Z" fill={stroke} opacity="0.9" />
+    </svg>
+  );
+}
+
+export function PaidAdsIcon({ className = "size-5", stroke = "black" }: IconProps) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 20 20">
+      <path
+        d="M3.125 16.25H16.875"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5 16.25V10.625"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M9.375 16.25V7.5"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M13.75 16.25V4.375"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M4.5 9.25L8.75 6.25L11.25 8.125L15.5 4.75"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function AiAutomationIcon({ className = "size-5", stroke = "black" }: IconProps) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 20 20">
+      <path
+        d="M7.5 3.75H12.5M7.5 16.25H12.5"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <path
+        d="M3.75 7.5V12.5M16.25 7.5V12.5"
+        stroke={stroke}
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+      <rect
+        x="6.25"
+        y="6.25"
+        width="7.5"
+        height="7.5"
+        rx="2"
+        stroke={stroke}
+        strokeWidth="1.25"
+      />
+      <path d="M8.125 10H11.875" stroke={stroke} strokeWidth="1.25" strokeLinecap="round" />
+      <path d="M10 8.125V11.875" stroke={stroke} strokeWidth="1.25" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export const FEATURE_TAB_ICONS: Record<string, React.ComponentType<IconProps>> = {
   "client-portal": ClientPortalIcon,
   "kpi-tracking": KpiTrackingIcon,
   "workflow-automation": WorkflowIcon,
   "team-management": TeamManagementIcon,
+  "brand-web": BrandWebIcon,
+  "video-content": VideoContentIcon,
+  "paid-advertising": PaidAdsIcon,
+  "ai-automation": AiAutomationIcon,
 };

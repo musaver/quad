@@ -28,14 +28,14 @@ export function FeatureSection() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(i)}
-                  className={`flex-1 min-w-0 flex gap-2 items-center justify-center p-3 md:p-4 rounded-[32px] transition-all cursor-pointer ${
+                  className={`flex-none md:flex-1 min-w-fit md:min-w-0 flex gap-2 items-center justify-center px-4 py-3 md:p-4 rounded-[32px] transition-all cursor-pointer ${
                     isActive
                       ? "bg-white/80 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.1)]"
                       : "opacity-50 hover:opacity-75"
                   }`}
                 >
                   {IconComponent && <IconComponent className="size-5 shrink-0" />}
-                  <span className="hidden sm:inline font-[family-name:var(--font-geist)] text-sm md:text-lg text-black tracking-[-0.54px] whitespace-nowrap">
+                  <span className="font-[family-name:var(--font-geist)] text-sm md:text-lg text-black tracking-[-0.54px] whitespace-nowrap">
                     {tab.label}
                   </span>
                 </button>
